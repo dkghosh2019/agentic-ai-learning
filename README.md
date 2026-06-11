@@ -1,3 +1,13 @@
+<div align="center">
+
+# 🧠 **Agentic AI Learning Journey**
+### *A 30‑Day Professional Roadmap to Building Real Agentic Systems*
+
+---
+
+</div>
+
+
 # 🧠 Agentic AI Learning Journey (30 Days)
 
 A structured, hands-on, 30‑day journey into **Agentic AI**, designed for 1–2 hours of focused learning per day.  
