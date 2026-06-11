@@ -113,4 +113,54 @@ Summarize this text, extract key points, and format them as bullet points.
 The system prompt defines the **rules and identity**.  
 The user prompt defines the **task**.  
 Together, they shape the assistant’s final response.
+## Assistant Role
+
+The **assistant role** is the model’s actual response.  
+It is the output generated after combining the system prompt, the user prompt, and the conversation history.
+
+The assistant does not choose its own behavior.  
+It follows the rules defined by the **system prompt** and responds to the task defined by the **user prompt**.
+
+---
+
+### 🔹 What the Assistant Role Represents
+- The model’s interpretation of all instructions  
+- The final answer or output  
+- The tone and style enforced by the system prompt  
+- The content requested by the user prompt  
+- The context carried across multi‑turn conversations  
+
+---
+
+### 🔹 How the Assistant Role Behaves
+The assistant:
+- Obeys the system prompt  
+- Answers the user prompt  
+- Maintains consistency across turns  
+- Applies formatting rules  
+- Respects constraints  
+- Adapts tone and personality as instructed  
+
+---
+
+### 🔹 Example of All Three Roles Working Together
+
+**System prompt:**  
+```text
+You are a calm, devotional narrator.
+```
+
+**User prompt:**  
+```text
+Explain karma.
+```
+
+**Assistant response:**  
+A gentle, devotional explanation — because the system prompt defines the identity, and the user prompt defines the task.
+
+---
+
+### 🔹 Key Insight
+The assistant role is the **result** of prompt engineering.  
+If the assistant’s output is wrong, unclear, or inconsistent, the issue is usually in the **system prompt** or **user prompt**, not the assistant.
 
