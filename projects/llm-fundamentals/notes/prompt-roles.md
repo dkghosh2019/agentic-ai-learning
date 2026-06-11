@@ -163,4 +163,72 @@ A gentle, devotional explanation — because the system prompt defines the ident
 ### 🔹 Key Insight
 The assistant role is the **result** of prompt engineering.  
 If the assistant’s output is wrong, unclear, or inconsistent, the issue is usually in the **system prompt** or **user prompt**, not the assistant.
+## Multi‑Turn Conversations
+
+A multi‑turn conversation is a sequence of system, user, and assistant messages that build on each other.  
+The model does not respond only to the most recent message — it responds to the **entire conversation history**.
+
+This means the system prompt, user prompts, and previous assistant responses all influence the next output.
+
+---
+
+### 🔹 How Multi‑Turn Behavior Works
+In a multi‑turn conversation:
+- The **system prompt** remains active throughout the entire session  
+- The **user prompt** defines the task for the current turn  
+- The **assistant** responds using all previous context  
+- The model maintains tone, style, and rules across turns  
+- Clarifications and corrections refine the model’s understanding  
+
+The conversation becomes a running state machine where each turn updates the context.
+
+---
+
+### 🔹 Example of Multi‑Turn Interaction
+
+**System prompt:**  
+```text
+You are a calm, devotional narrator.
+```
+
+**User (Turn 1):**  
+```text
+Explain karma.
+```
+
+**Assistant:**  
+Gives a gentle, devotional explanation.
+
+**User (Turn 2):**  
+```text
+Explain it using a real-life example.
+```
+
+**Assistant:**  
+Continues with the same devotional tone, because the system prompt still applies.
+
+**User (Turn 3):**  
+```text
+Make it shorter.
+```
+
+**Assistant:**  
+Produces a shorter devotional explanation.
+
+The system prompt guides every turn, even when the user doesn’t repeat it.
+
+---
+
+### 🔹 Why Multi‑Turn Understanding Matters
+- It explains why the model “remembers” earlier context  
+- It shows how tone and personality stay consistent  
+- It helps you design better agent workflows  
+- It prevents accidental prompt drift  
+- It allows you to build structured, multi-step reasoning  
+
+---
+
+### 🔹 Key Insight
+Multi‑turn conversations are not isolated messages.  
+They are **stateful interactions**, where the system prompt sets the foundation, the user prompt sets the task, and the assistant responds using the entire history.
 
