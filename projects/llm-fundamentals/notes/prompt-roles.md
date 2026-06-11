@@ -231,4 +231,78 @@ The system prompt guides every turn, even when the user doesn’t repeat it.
 ### 🔹 Key Insight
 Multi‑turn conversations are not isolated messages.  
 They are **stateful interactions**, where the system prompt sets the foundation, the user prompt sets the task, and the assistant responds using the entire history.
+## Putting It All Together
+
+System prompts, user prompts, and assistant responses work together to shape every interaction with an LLM.  
+Each role has a distinct purpose, and understanding how they interact is the foundation of effective prompt engineering.
+
+---
+
+### 🔹 The Three Roles at a Glance
+
+- **System Prompt** — Defines the AI’s identity, tone, rules, and behavior  
+- **User Prompt** — Defines the task or question for the current turn  
+- **Assistant Role** — The model’s response, shaped by both system and user prompts  
+
+Together, they form a structured conversation where each role contributes to the final output.
+
+---
+
+### 🔹 How They Interact in Practice
+
+1. **The system prompt sets the foundation**  
+   It establishes who the AI is and how it should behave across the entire session.
+
+2. **The user prompt gives the immediate instruction**  
+   It tells the AI what to do right now, within the boundaries of the system prompt.
+
+3. **The assistant responds using all available context**  
+   It combines:
+   - System rules  
+   - User instructions  
+   - Conversation history  
+
+4. **Multi‑turn context evolves over time**  
+   The assistant uses previous messages to maintain consistency, tone, and memory.
+
+---
+
+### 🔹 Example Summary
+
+**System prompt:**  
+“You are a calm, devotional narrator.”
+
+**User prompt:**  
+“Explain karma.”
+
+**Assistant:**  
+Gives a gentle, devotional explanation.
+
+**User (next turn):**  
+“Make it shorter.”
+
+**Assistant:**  
+Still devotional, still calm — because the system prompt continues to guide the behavior.
+
+---
+
+### 🔹 Why This Matters for Agentic AI
+
+Understanding these roles allows you to:
+- Build predictable, reliable agents  
+- Control tone and behavior across long workflows  
+- Reduce hallucinations  
+- Maintain consistent formatting  
+- Design multi‑step reasoning chains  
+- Create specialized personas for different tasks  
+
+This is the core of building **agentic systems**, where each agent has a clear identity and purpose.
+
+---
+
+### 🔹 Key Insight
+
+Prompt roles are not just message labels —  
+they are the **architecture** of how LLMs think, respond, and behave.  
+Mastering them gives you precise control over the model’s output.
 
